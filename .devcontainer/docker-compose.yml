@@ -1,0 +1,9 @@
+version: '3.8'
+
+services: 
+  app:
+    image: mcr.microsoft.com/devcontainers/typescript-node:1-${templateOption:imageVariant}
+    volumes:
+      - ../..:/workspaces:cached
+    
+    command: sleep infinity
